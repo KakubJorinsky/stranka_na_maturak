@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(212, 175, 55);
+    margin: 100px;
+}
+
+header{
+    background-color: rgb(44, 44, 44);
+    padding: 32px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+
+main{
+    background-color: white;
+    height: 500px;
+    padding: 32px;
+}
+
+footer{
+    background-color: rgb(44, 44, 44);
+    padding: 32px;
+}
+
+footer p{
+    color: white;
+}
