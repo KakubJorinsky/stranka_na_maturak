@@ -1,5 +1,8 @@
 body{
     background-color: rgb(212, 175, 55);
+    background-image: url(/img/pozadi_maturak.png);
+    background-position: left top;
+    background-repeat: repeat-y;
     margin: 100px;
 }
 
@@ -27,4 +30,23 @@ footer{
 
 footer p{
     color: white;
+}
+
+footer h1{
+    color: white;
+}
+
+.nadpis{
+    display: flex;
+    justify-content: center;
+}
+
+._IT4B{
+    display: flex;
+    justify-content: left;
+}
+
+._4STB{
+    display: flex;
+    justify-content: right;
 }
