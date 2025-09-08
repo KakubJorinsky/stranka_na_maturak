@@ -84,13 +84,8 @@ ul li::before {
   border: 1px solid gold;
   padding: 1rem;
   border-radius: 8px;
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.program-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(255,215,0,0.6);
-}
 
 /* Maturanti – grid */
 .classes-grid {
@@ -104,13 +99,8 @@ ul li::before {
   border: 1px solid rgba(255,215,0,0.3);
   border-radius: 10px;
   padding: 1rem;
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.class:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 12px rgba(255,215,0,0.4);
-}
 
 .class h3 {
   color: gold;
