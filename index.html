@@ -3,29 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maturitní ples tříd IT4B a 4SCB v Park Hotelu, Plzeň, 1. 11. 2025. Přidejte se na Pařbu ve Vegas!">
+  <meta name="keywords" content="maturitní ples, Pařba ve Vegas, IT4B, 4SCB, Plzeň">
   <title>Pařba ve Vegas - Maturitní ples</title>
   <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script/script.js" defer></script>
 </head>
 <body>
+  <div class="background-video">
+    <video autoplay muted loop playsinline>
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-las-vegas-neon-lights-at-night-43656-large.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="particles"></div>
+
+  <nav class="sticky-nav">
+    <ul>
+      <li><a href="#info">Informace</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#maturanti">Maturanti</a></li>
+      <li><a href="#sponzori">Sponzoři</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+
   <header>
     <h1>Pařba ve Vegas</h1>
     <p>Maturitní ples tříd IT4B a 4SCB</p>
+    <a href="#info" class="cta-button">Zjistit více</a>
   </header>
 
   <main>
     <section id="info">
       <h2>Informace o plese</h2>
-      <p><strong>Kdy:</strong> 1. listopadu 2025, začátek ve 20:00</p>
-      <p><strong>Kde:</strong> Park Hotel, Plzeň</p>
-      <p><strong>Třídy:</strong> IT4B a 4SCB</p>
-      <p><strong>Vstupenky:</strong> 350 Kč (stání), 400 Kč (sezení)</p>
+      <div id="countdown">
+        <h3>Odpočet do plesu</h3>
+        <p id="timer"></p>
+      </div>
+      <div class="info-grid">
+        <div class="info-card"><strong>Kdy:</strong> 1. listopadu 2025, 20:00</div>
+        <div class="info-card"><strong>Kde:</strong> Park Hotel, Plzeň</div>
+        <div class="info-card"><strong>Třídy:</strong> IT4B a 4SCB</div>
+        <div class="info-card"><strong>Vstupenky:</strong> 350 Kč (stání), 400 Kč (sezení)</div>
+      </div>
+      <div class="cta-container">
+        <a href="mailto:lavrikov@student.souepl.cz?subject=Objednávka vstupenek" class="cta-button">Koupit vstupenky</a>
+      </div>
     </section>
 
     <section id="info-skola">
-        <h2>Informace o duševním ústavu</h2>
-        <p><strong>Název škol: </strong>Střední odborné učiliště elektrotechnické; Střední průmyslová škola strojnická a Střední odborná škola profesora Švejcara</p>
-        <p><strong></strong></p>
+      <h2>Informace o duševních ústavech</h2>
+      <p><strong>Název škol:</strong> Střední odborné učiliště elektrotechnické; Střední průmyslová škola strojnická a Střední odborná škola profesora Švejcara</p>
+      <p><strong>Adresa:</strong> Plzeň, Česká republika</p>
     </section>
 
     <section id="program">
@@ -44,7 +75,7 @@
         <div class="program-item">00:00–00:20 – Půlnoční překvapení maturantů</div>
         <div class="program-item">00:20–00:45 – Druhé taneční vystoupení maturantů</div>
         <div class="program-item">00:45–00:50 – Závěrečné video a slavnostní ukončení oficiálního programu</div>
-        <div class="program-item">00:50–02:00 – Hudba a tanec pod vedením DJ až do konce slavnosti.</div>
+        <div class="program-item">00:50–02:00 – Hudba a tanec pod vedením DJ až do konce slavnosti</div>
       </div>
     </section>
 
@@ -131,13 +162,23 @@
       </div>
     </section>
 
-    <!-- Sponzoři -->
     <section id="sponzori">
       <h2>Sponzoři</h2>
-      <p>Neděkujeme našim partnerům.</p>
+      <p>Děkujeme našim partnerům za podporu!</p>
+      <div class="sponsor-carousel">
+        <div class="carousel-track">
+          <img src="https://via.placeholder.com/200x120?text=Sponzor1" alt="Sponzor 1">
+          <img src="https://via.placeholder.com/200x120?text=Sponzor2" alt="Sponzor 2">
+          <img src="https://via.placeholder.com/200x120?text=Sponzor3" alt="Sponzor 3">
+          <img src="https://via.placeholder.com/200x120?text=Sponzor4" alt="Sponzor 4">
+          <img src="https://via.placeholder.com/200x120?text=Sponzor1" alt="Sponzor 1">
+          <img src="https://via.placeholder.com/200x120?text=Sponzor2" alt="Sponzor 2">
+          <img src="https://via.placeholder.com/200x120?text=Sponzor3" alt="Sponzor 3">
+          <img src="https://via.placeholder.com/200x120?text=Sponzor4" alt="Sponzor 4">
+        </div>
+      </div>
     </section>
 
-    <!-- Kontakt -->
     <section id="kontakt">
       <h2>Kontakt</h2>
       <p>Pro více informací kontaktujte: <strong>Adam Lavrikov</strong></p>
@@ -147,11 +188,11 @@
   </main>
 
   <footer>
-    <h2>Sledujte nás (radši ne)</h2>
+    <h2>Sledujte nás</h2>
     <div class="icons">
-      <a href="#">Facebook</a>
-      <a href="https://www.instagram.com/hangover_it4b_4scb?igsh=YXB1dWZoNmJvMGM0">Instagram</a>
-      <a href="#">TikTok</a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/hangover_it4b_4scb?igsh=YXB1dWZoNmJvMGM0" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
     </div>
     <p>&copy; 2025 Pařba ve Vegas – všechna práva vyhrazena</p>
   </footer>
