@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -70,9 +73,9 @@ body {
 .sticky-nav ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-left: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 2rem;
 }
 
@@ -178,10 +181,6 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.info-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
-}
 
 ul {
   list-style: none;
@@ -212,7 +211,6 @@ ul li::before {
   font-size: 1.3rem;
   border: 2px solid rgba(255, 215, 0, 0.5);
   transition: all 0.5s ease;
-  cursor: pointer;
   opacity: 0;
   transform: translateX(-50px);
   animation: slideIn 0.8s ease forwards;
@@ -236,11 +234,7 @@ ul li::before {
   to { opacity: 1; transform: translateX(0); }
 }
 
-.program-item.active {
-  background: linear-gradient(45deg, rgba(255, 215, 0, 0.4), rgba(233, 30, 99, 0.4));
-  box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
-  transform: scale(1.03);
-}
+
 
 .classes-grid {
   display: grid;
@@ -301,7 +295,7 @@ ul li::before {
 .cta-button {
   display: inline-block;
   margin-top: 2rem;
-  padding: 1.3rem 3rem;
+  padding: 3rem;
   background: linear-gradient(45deg, #ffd700, #e91e63);
   color: #000;
   text-decoration: none;
